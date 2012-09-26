@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html>
+ <!-- Xiaofeng David Lin
+      September 26th 2012
+      Video Game Project 
+      Project 2 - v0.2-->
+    <head>
+      <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+      <meta name="author"             content="Xiaofeng David Lin" />
+      <title>CS Video Game</title>
+      <script type="text/JavaScript">
+        var score = 0;
+        var visitedNorth = false;
+        var visitedSouth = false;
+        var visitedEast = false; 
+        var visitedWest = false;
+        
+        function btn_north_onclick () {
+          var north="Walking North";
+          alert(north);
+          if(!visitedNorth){
+         	 score = score + 5;
+         	 visitedNorth = true;	
+         	 } 
+        }
+          
+        function btn_south_onclick () {
+          var south="Walking South";
+          alert(south);
+          if(!visitedSouth){
+         	 score = score + 5;
+         	 visitedSouth = true;
+         	 }
+        }
+        
+        function btn_east_onclick () {
+          var east="Walking East";
+          alert(east);
+          if(!visitedEast){
+         	 score = score + 5;
+         	 visitedEast = true;
+         	 } 
+        }
+        
+        function btn_west_onclick () {
+          var west="Walking West";
+          alert(west);
+          if(!visitedWest){
+         	 score = score + 5;
+         	 visitedWest = true;
+         	 }
+        }
+        
+        function btn_showscore_onclick () {
+	        alert(score);
+        }
+        
+     </script>
+     <style>
+       	 body {background-color:gray;}
+        .dave {font-style: normal; font-weight:bold; color:Darkred}
+        .csstyle {font-style: italic; font-weight:bold; color:crimson}
+      </style>
+    </head>
+    <body>
+      <h1 class="csstyle"> Welcome to David Lin's Video Game </h1>
+      <h2 class="dave"> CMPT 120 and CMSC 120 - Fall 2012</h2>
+      <br>
+      	Welcome to my first text adventure Game! Have Fun!
+      <br>
+      <textarea id="taGame" rows="8" cols="40">Starting Location: Sec 1
+      </textarea>
+      <p>
+      	<input type="button"
+               value="North"
+               onclick="btn_north_onclick();">
+      
+        <input type="button"
+               value="South"
+               onclick="btn_south_onclick();">
+        
+        <input type="button"
+               value="East"
+               onclick="btn_east_onclick();">
+        
+        <input type="button"
+               value="West"
+               onclick="btn_west_onclick();">
+      <br>
+      <br>
+       	<input type="button"
+       		   value="ScoreBoard"
+       		   onclick="btn_showscore_onclick();">
+      </p>
+    <a href="mailto:xiaofeng.lin1@marist.edu">Email</a>
+    </body>
+</html>
