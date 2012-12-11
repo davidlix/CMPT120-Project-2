@@ -18,7 +18,7 @@
         var east            = 1;
         var south           = 2;
         var west            = 3;
-        var currentlocation = 0
+        var currentlocation = 0;
         var inventory = [];
     // Nav Array
         var nav = [                    
